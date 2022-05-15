@@ -4,7 +4,7 @@ import './upload.css'
 import Rendering from '../Rendering/Rendering'
 
 const Upload = () => {
-    const[selectedfile,setSelectedFile]=useState()
+    const[selectedfile,setSelectedFile]=useState({})
     const[isFilepicked,setIsFilePicked]=useState(false)
 
     const handleChange=(e)=>{
@@ -22,7 +22,7 @@ const Upload = () => {
 <section>
 <h2> Upload video for your Orthosis</h2>
 <div className='form_container'>
-{isFilepicked? <Rendering data {...selectedfile}/>: <form>
+{isFilepicked? <Rendering file= {selectedfile}/>: <form>
     <input type="file" name='file' onChange={handleChange}  />
     <button onClick={handleClick}>Upload Video</button>
 </form>}
