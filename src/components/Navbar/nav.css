@@ -4,6 +4,8 @@
     border-bottom: 0.5px solid rgba(123, 121, 121, 0.7);;
     border-top: 0.5px solid rgba(123, 121, 121, 0.7);
     margin-top: 0.3rem;
+    position: sticky;
+    top: 0;
 }
 
 .nav_items{
@@ -41,3 +43,10 @@ nav>a{
   }
   .button:hover{
         color: red;}
+
+{
+    content:'';
+    height: 50px;
+    border: 1px solid rgba(123, 121, 121, 0.7);
+    margin-right: 5rem;
+}
